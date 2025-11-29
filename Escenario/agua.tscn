@@ -1,0 +1,84 @@
+[gd_scene load_steps=14 format=3 uid="uid://50pgrys5cokl"]
+
+[ext_resource type="Texture2D" uid="uid://fukaxnqnwdb1" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/1.png" id="1_552m8"]
+[ext_resource type="Script" uid="uid://dqrx23w446hug" path="res://Escenario/agua.gd" id="1_wjuxn"]
+[ext_resource type="Texture2D" uid="uid://u6abe7ri37sh" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/2.png" id="2_wjuxn"]
+[ext_resource type="Texture2D" uid="uid://do3iqbb6sq11u" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/3.png" id="3_sdder"]
+[ext_resource type="Texture2D" uid="uid://bqhwilbu8cj1q" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/4.png" id="4_1pq18"]
+[ext_resource type="Texture2D" uid="uid://btp386x7nuee2" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/1.png" id="5_flquq"]
+[ext_resource type="Texture2D" uid="uid://r8jkyuaj23mc" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/2.png" id="6_omx18"]
+[ext_resource type="Texture2D" uid="uid://xn00orjqpxl8" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/3.png" id="7_nx5vp"]
+[ext_resource type="Texture2D" uid="uid://b386il4i7g73v" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/4.png" id="8_ci0yi"]
+[ext_resource type="Texture2D" uid="uid://e1uwh4buxghv" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/5.png" id="9_7x7nw"]
+[ext_resource type="Texture2D" uid="uid://b4tb5nv31bqte" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Water/Reflexes 2/6.png" id="10_nm1l6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wdpiv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_552m8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wjuxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sdder")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1pq18")
+}],
+"loop": true,
+"name": &"AguaMovimiento",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tko33"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_flquq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_omx18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nx5vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ci0yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7x7nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nm1l6")
+}],
+"loop": true,
+"name": &"Reflejos2",
+"speed": 5.0
+}]
+
+[node name="Agua" type="Node2D"]
+script = ExtResource("1_wjuxn")
+
+[node name="AguaMovimiento" type="AnimatedSprite2D" parent="."]
+position = Vector2(49, 19)
+sprite_frames = SubResource("SpriteFrames_wdpiv")
+animation = &"AguaMovimiento"
+frame_progress = 0.41052294
+
+[node name="AguaReflejos" type="AnimatedSprite2D" parent="."]
+position = Vector2(30, 20.5)
+scale = Vector2(1, 0.8611111)
+sprite_frames = SubResource("SpriteFrames_tko33")
+animation = &"Reflejos2"
+frame_progress = 0.5967148
+
+[node name="AguaReflejos2" type="AnimatedSprite2D" parent="."]
+position = Vector2(69, 21)
+scale = Vector2(1, 0.8888889)
+sprite_frames = SubResource("SpriteFrames_tko33")
+animation = &"Reflejos2"
+frame_progress = 0.6237589
+
+[node name="Area2D" type="Area2D" parent="."]

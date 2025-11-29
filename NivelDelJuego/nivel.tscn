@@ -1,18 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=4 format=3 uid="uid://dmcx6fqjdxuib"]
 
-[ext_resource type="PackedScene" uid="uid://dod2fw47oufp0" path="res://Escenario/Terreno.tscn" id="1_sh55c"]
-[ext_resource type="PackedScene" uid="uid://ui6gc7ukk1uy" path="res://Personajes/pirata.tscn" id="2_jbjbr"]
+[ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
+[ext_resource type="PackedScene" uid="uid://ui6gc7ukk1uy" path="res://Personajes/Pirata/pirata.tscn" id="2_jbjbr"]
+[ext_resource type="PackedScene" uid="uid://b6j48e7t735j8" path="res://Personajes/Enemigos/Craby.tscn" id="3_jbjbr"]
 
-[node name="Nivel" type="Node2D"]
+[node name="Juego" type="Node2D"]
+
+[node name="Zona1" parent="." instance=ExtResource("1_sh55c")]
+position = Vector2(-1, 8)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(10, 65)
+position = Vector2(102, 153)
 
-[node name="Camera2D" type="Camera2D" parent="Pirata"]
-position = Vector2(-10, -65)
-
-[node name="StaticBody2D" parent="." instance=ExtResource("1_sh55c")]
-position = Vector2(80, 131)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("1_sh55c")]
-position = Vector2(319, 131)
+[node name="Craby" parent="." instance=ExtResource("3_jbjbr")]
+position = Vector2(278, 186)

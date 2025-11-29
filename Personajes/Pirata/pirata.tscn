@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://ui6gc7ukk1uy"]
 
 [ext_resource type="Texture2D" uid="uid://bmwsd53m531mw" path="res://assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_m3dgb"]
-[ext_resource type="Script" uid="uid://cyvb3hqixo67q" path="res://Personajes/pirata.gd" id="1_svpxh"]
+[ext_resource type="Script" uid="uid://cyvb3hqixo67q" path="res://Personajes/Pirata/pirata.gd" id="1_svpxh"]
 [ext_resource type="Texture2D" uid="uid://bevqpqda00adu" path="res://assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 01.png" id="2_rfkih"]
 [ext_resource type="Texture2D" uid="uid://f334cgo11ffh" path="res://assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 02.png" id="3_c1uc6"]
 [ext_resource type="Texture2D" uid="uid://7en3esyr57kp" path="res://assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 03.png" id="4_fu58a"]
@@ -155,3 +155,11 @@ shape = SubResource("CapsuleShape2D_x6jhb")
 position = Vector2(33, 22)
 sprite_frames = SubResource("SpriteFrames_tdpkp")
 animation = &"Dead_Ground"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(35, 40)
+limit_left = 0
+limit_top = 0
+limit_right = 3000
+limit_bottom = 270
+limit_smoothed = true
