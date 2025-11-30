@@ -1,6 +1,7 @@
-extends Node2D
+extends StaticBody2D
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$BG/Reflejos.play("ReflejosGrandes")
+	$CanionDisparando.play("Disparo")
+	$EfectoDisparo.play("Humo")

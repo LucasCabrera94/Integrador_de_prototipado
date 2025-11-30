@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://csoirqa70emm7" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="2_tftwb"]
 [ext_resource type="PackedScene" uid="uid://bp0rclbx4o2ue" path="res://ElementosDelTerreno/Plataformas/Palmera.tscn" id="3_tftwb"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cvp13"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tftwb"]
 texture = ExtResource("2_tftwb")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
@@ -42,7 +42,7 @@ texture = ExtResource("2_tftwb")
 
 [sub_resource type="TileSet" id="TileSet_opue3"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_cvp13")
+sources/0 = SubResource("TileSetAtlasSource_tftwb")
 
 [node name="Zona1" type="Node2D"]
 
