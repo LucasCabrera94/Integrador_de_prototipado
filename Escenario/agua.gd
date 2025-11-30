@@ -6,8 +6,3 @@ func _ready() -> void:
 	$AguaMovimiento.play("AguaMovimiento")
 	$AguaReflejos.play("Reflejos2")
 	$AguaReflejos2.play("Reflejos2")
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://b6j48e7t735j8"]
 
 [ext_resource type="Texture2D" uid="uid://blf4psoq6mgma" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 01.png" id="1_0l07l"]
-[ext_resource type="Script" uid="uid://dlbxd01kdhl77" path="res://Personajes/Enemigos/craby.gd" id="1_dbfa2"]
+[ext_resource type="Script" uid="uid://dlbxd01kdhl77" path="res://Personajes/Enemigos/Craby/craby.gd" id="1_dbfa2"]
 [ext_resource type="Texture2D" uid="uid://uu331lw2fgrm" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 02.png" id="2_dbfa2"]
 [ext_resource type="Texture2D" uid="uid://d06vpy5attgi0" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 03.png" id="3_dvx4l"]
 [ext_resource type="Texture2D" uid="uid://ceav5cxqkdtso" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 04.png" id="4_kcdfr"]
@@ -112,7 +112,7 @@ animation = &"Run"
 frame = 2
 frame_progress = 0.8813827
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -2)
-scale = Vector2(-1.9611362, 0.067844525)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["enemy"]]
+position = Vector2(1, 1)
+scale = Vector2(-0.9833385, 0.05364215)
 shape = SubResource("CapsuleShape2D_dbfa2")

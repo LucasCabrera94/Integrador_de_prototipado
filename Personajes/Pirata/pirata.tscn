@@ -28,8 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://dt1vudh4o0xs6" path="res://assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 03.png" id="26_g5b8x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x6jhb"]
-radius = 12.0
-height = 28.0
+radius = 6.9650803
+height = 22.566467
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tdpkp"]
 animations = [{
@@ -104,7 +104,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -127,7 +127,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -149,17 +149,25 @@ script = ExtResource("1_svpxh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(33, 21)
+scale = Vector2(1.1485869, -1.0635248)
 shape = SubResource("CapsuleShape2D_x6jhb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(33, 22)
 sprite_frames = SubResource("SpriteFrames_tdpkp")
-animation = &"Dead_Ground"
+animation = &"Run"
+frame_progress = 0.19818495
+
+[node name="DamageDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageDetector"]
+position = Vector2(33, 21)
+scale = Vector2(1.2, 1.12)
+shape = SubResource("CapsuleShape2D_x6jhb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(35, 40)
 limit_left = 0
-limit_top = 0
-limit_right = 3000
 limit_bottom = 270
-limit_smoothed = true
+position_smoothing_enabled = true
+
+[connection signal="body_entered" from="DamageDetector" to="." method="_on_damage_detector_body_entered"]
