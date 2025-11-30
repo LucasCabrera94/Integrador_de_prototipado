@@ -1,14 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=9 format=3 uid="uid://dmcx6fqjdxuib"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
 [ext_resource type="PackedScene" uid="uid://bp02byo1yn3ki" path="res://ElementosDelTerreno/Background/background.tscn" id="1_v1yke"]
 [ext_resource type="PackedScene" uid="uid://ui6gc7ukk1uy" path="res://Personajes/Pirata/pirata.tscn" id="2_jbjbr"]
 [ext_resource type="PackedScene" uid="uid://d2ng52j0sywsn" path="res://ZonasDelJuego/Zona2.tscn" id="3_ahqv6"]
-[ext_resource type="PackedScene" uid="uid://b6j48e7t735j8" path="res://Personajes/Enemigos/Craby/Craby.tscn" id="3_jbjbr"]
+[ext_resource type="PackedScene" uid="uid://hsngspvttunp" path="res://ZonasDelJuego/Zona3.tscn" id="5_ahqv6"]
+[ext_resource type="PackedScene" uid="uid://bwgka70e4ca6p" path="res://ZonasDelJuego/Zona4.tscn" id="6_0xv18"]
+[ext_resource type="PackedScene" uid="uid://bc3dj8cvwm6qg" path="res://ZonasDelJuego/Zona5.tscn" id="6_4rdsp"]
+[ext_resource type="PackedScene" uid="uid://5gbutog2k1yu" path="res://ZonasDelJuego/Zona6.tscn" id="7_6a21a"]
 
 [node name="Juego" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_v1yke")]
+
+[node name="Zona5" parent="." instance=ExtResource("6_4rdsp")]
+position = Vector2(1598, -315)
 
 [node name="Zona1" parent="." instance=ExtResource("1_sh55c")]
 position = Vector2(-1, 8)
@@ -16,8 +22,14 @@ position = Vector2(-1, 8)
 [node name="Zona2" parent="." instance=ExtResource("3_ahqv6")]
 position = Vector2(570, -217)
 
-[node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(89, 164)
+[node name="Zona3" parent="." instance=ExtResource("5_ahqv6")]
+position = Vector2(1264, -516)
 
-[node name="Craby" parent="." instance=ExtResource("3_jbjbr")]
-position = Vector2(283, 186)
+[node name="Zona4" parent="." instance=ExtResource("6_0xv18")]
+position = Vector2(1662, -315)
+
+[node name="Zona6" parent="." instance=ExtResource("7_6a21a")]
+position = Vector2(1432, -17)
+
+[node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
+position = Vector2(177, 56)

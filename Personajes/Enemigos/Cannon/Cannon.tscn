@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://biijaafsxoirh"]
+
+[ext_resource type="Script" uid="uid://de35hcf587to6" path="res://Personajes/Enemigos/Cannon/cannon.gd" id="1_lqpa6"]
+[ext_resource type="PackedScene" uid="uid://btlmi0x65whw2" path="res://Personajes/Enemigos/Cannon/Bullet.tscn" id="2_hnftf"]
+[ext_resource type="Texture2D" uid="uid://b8b2fujmvwuew" path="res://assets/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/4.png" id="5_arbo6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_35xw0"]
+radius = 13.0
+
+[node name="Cannon" type="StaticBody2D"]
+script = ExtResource("1_lqpa6")
+bullet = ExtResource("2_hnftf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("5_arbo6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.5763954, 0.8654168)
+shape = SubResource("CircleShape2D_35xw0")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(-79, 0)
+
+[node name="spawbullet" type="Marker2D" parent="."]
+position = Vector2(-28, 0)
+
+[node name="Timer" type="Timer" parent="."]

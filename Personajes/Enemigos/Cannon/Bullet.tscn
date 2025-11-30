@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btlmi0x65whw2"]
+
+[ext_resource type="Texture2D" uid="uid://d2w1eh3nay15j" path="res://assets/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Idle/1.png" id="1_dhwj4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dhwj4"]
+
+[node name="Bullet" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dhwj4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.7967504, 0.7524968)
+shape = SubResource("CircleShape2D_dhwj4")
