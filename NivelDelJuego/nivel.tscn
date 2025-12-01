@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=13 format=3 uid="uid://dmcx6fqjdxuib"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
 [ext_resource type="PackedScene" uid="uid://bp02byo1yn3ki" path="res://ElementosDelTerreno/Background/background.tscn" id="1_v1yke"]
@@ -8,6 +8,12 @@
 [ext_resource type="PackedScene" uid="uid://bwgka70e4ca6p" path="res://ZonasDelJuego/Zona4.tscn" id="6_0xv18"]
 [ext_resource type="PackedScene" uid="uid://bc3dj8cvwm6qg" path="res://ZonasDelJuego/Zona5.tscn" id="6_4rdsp"]
 [ext_resource type="PackedScene" uid="uid://5gbutog2k1yu" path="res://ZonasDelJuego/Zona6.tscn" id="7_6a21a"]
+[ext_resource type="PackedScene" uid="uid://biijaafsxoirh" path="res://Personajes/Enemigos/Cannon/Cannon.tscn" id="9_da54p"]
+[ext_resource type="PackedScene" uid="uid://1r8upts2ixuk" path="res://ElementosDelTerreno/Coleccionables/Tesoro.tscn" id="10_mo66q"]
+[ext_resource type="PackedScene" uid="uid://dldq3xynikxo" path="res://ElementosDelTerreno/Plataformas/Barco.tscn" id="11_pobxg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pobxg"]
+size = Vector2(20, 338)
 
 [node name="Juego" type="Node2D"]
 
@@ -15,6 +21,10 @@
 
 [node name="Zona5" parent="." instance=ExtResource("6_4rdsp")]
 position = Vector2(1598, -315)
+
+[node name="Barco" parent="." instance=ExtResource("11_pobxg")]
+position = Vector2(31.000002, 245.99998)
+scale = Vector2(1.9383347, 1.7115538)
 
 [node name="Zona1" parent="." instance=ExtResource("1_sh55c")]
 position = Vector2(-1, 8)
@@ -32,4 +42,23 @@ position = Vector2(1662, -315)
 position = Vector2(1432, -17)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(177, 56)
+position = Vector2(22, 189)
+
+[node name="Cannon" parent="." instance=ExtResource("9_da54p")]
+position = Vector2(912, -111)
+
+[node name="Cannon2" parent="." instance=ExtResource("9_da54p")]
+position = Vector2(1103, -159)
+scale = Vector2(-1, 1)
+
+[node name="Tesoro" parent="." instance=ExtResource("10_mo66q")]
+position = Vector2(468, 245)
+
+[node name="MuroInvisible" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroInvisible"]
+position = Vector2(-7, 168)
+shape = SubResource("RectangleShape2D_pobxg")
+
+[node name="Cannon3" parent="." instance=ExtResource("9_da54p")]
+position = Vector2(537, 140)

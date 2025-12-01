@@ -100,7 +100,7 @@ animations = [{
 radius = 9.550064
 height = 345.11487
 
-[node name="Craby" type="CharacterBody2D"]
+[node name="Craby" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_dbfa2")
 patrol_distance = 20
 

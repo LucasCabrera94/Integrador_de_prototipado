@@ -46,7 +46,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_3fugu")
 }],
-"loop": true,
+"loop": false,
 "name": &"Dead_Ground",
 "speed": 5.0
 }, {
@@ -63,7 +63,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_i3lcn")
 }],
-"loop": true,
+"loop": false,
 "name": &"Dead_Hit",
 "speed": 5.0
 }, {
@@ -139,12 +139,12 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("26_g5b8x")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 5.0
 }]
 
-[node name="Pirata" type="CharacterBody2D"]
+[node name="Pirata" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_svpxh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -155,8 +155,7 @@ shape = SubResource("CapsuleShape2D_x6jhb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(33, 22)
 sprite_frames = SubResource("SpriteFrames_tdpkp")
-animation = &"Run"
-frame_progress = 0.19818495
+animation = &"Dead_Ground"
 
 [node name="DamageDetector" type="Area2D" parent="."]
 

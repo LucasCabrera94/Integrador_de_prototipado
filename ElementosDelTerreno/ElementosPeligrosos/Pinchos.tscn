@@ -4,7 +4,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0fj3g"]
 
-[node name="Pinchos" type="StaticBody2D"]
+[node name="Pinchos" type="StaticBody2D" groups=["enemy"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_b73tu")

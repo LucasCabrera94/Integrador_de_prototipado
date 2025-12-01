@@ -1,0 +1,74 @@
+[gd_scene load_steps=13 format=3 uid="uid://1r8upts2ixuk"]
+
+[ext_resource type="Texture2D" uid="uid://c7d7d3r1mwevo" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Padlock/1.png" id="1_jjwbd"]
+[ext_resource type="Texture2D" uid="uid://brmnnwt8yjkao" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/1.png" id="2_wbb3p"]
+[ext_resource type="Texture2D" uid="uid://cp8u2d68mi568" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/2.png" id="3_16ohg"]
+[ext_resource type="Texture2D" uid="uid://bdpoyesertqqh" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="4_jx36b"]
+[ext_resource type="Texture2D" uid="uid://cigl5tsv7k6hy" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/4.png" id="5_8ybfn"]
+[ext_resource type="Texture2D" uid="uid://dbp5h8rw1r0pt" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/5.png" id="6_qdjjy"]
+[ext_resource type="Texture2D" uid="uid://dwt7owu7u5nxg" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/6.png" id="7_sc0v8"]
+[ext_resource type="Texture2D" uid="uid://blvg446twjx7i" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/7.png" id="8_igfun"]
+[ext_resource type="Texture2D" uid="uid://yvfmo40yyekr" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/8.png" id="9_rokwv"]
+[ext_resource type="Texture2D" uid="uid://b3410qi2qibwt" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Idle/1.png" id="10_btfk1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lps7d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jjwbd")
+}],
+"loop": true,
+"name": &"Candado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wbb3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_16ohg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jx36b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8ybfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qdjjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sc0v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_igfun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rokwv")
+}],
+"loop": true,
+"name": &"Desbloqueado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_btfk1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4ogf"]
+size = Vector2(20, 25.022352)
+
+[node name="Tesoro" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lps7d")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.0000005)
+scale = Vector2(1.3916131, -0.87921387)
+shape = SubResource("RectangleShape2D_f4ogf")

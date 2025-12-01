@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=4 uid="uid://b1a4x66205dv6"]
+[gd_scene load_steps=10 format=4 uid="uid://b1a4x66205dv6"]
 
 [ext_resource type="TileSet" uid="uid://cppglgynr4app" path="res://TileSet/TerrenoTileSet.tres" id="1_iuedl"]
 [ext_resource type="PackedScene" uid="uid://50pgrys5cokl" path="res://Escenario/agua.tscn" id="2_bcclw"]
 [ext_resource type="Texture2D" uid="uid://csoirqa70emm7" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="2_tftwb"]
 [ext_resource type="PackedScene" uid="uid://bp0rclbx4o2ue" path="res://ElementosDelTerreno/Plataformas/Palmera.tscn" id="3_tftwb"]
 [ext_resource type="PackedScene" uid="uid://b6j48e7t735j8" path="res://Personajes/Enemigos/Craby/Craby.tscn" id="5_cvp13"]
+[ext_resource type="PackedScene" uid="uid://yu5mfwcpfgvg" path="res://ElementosDelTerreno/Coleccionables/Moneda.tscn" id="6_4whgv"]
+[ext_resource type="PackedScene" uid="uid://bqpomhx8qajve" path="res://ElementosDelTerreno/ElementosPeligrosos/Pinchos.tscn" id="7_3e03m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tftwb"]
 texture = ExtResource("2_tftwb")
@@ -84,3 +86,29 @@ position = Vector2(536, 44)
 
 [node name="Craby" parent="." instance=ExtResource("5_cvp13")]
 position = Vector2(248, 177)
+
+[node name="Moneda" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(199, 112)
+
+[node name="Moneda2" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(297, 128)
+
+[node name="Moneda3" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(470, 80)
+
+[node name="Moneda4" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(535, 20)
+
+[node name="Moneda5" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(411, 228)
+
+[node name="Moneda6" parent="." instance=ExtResource("6_4whgv")]
+position = Vector2(515, 179)
+
+[node name="Pinchos" parent="." instance=ExtResource("7_3e03m")]
+position = Vector2(556, 172)
+rotation = -1.5707964
+
+[node name="Pinchos2" parent="." instance=ExtResource("7_3e03m")]
+position = Vector2(366.00003, 236.99998)
+scale = Vector2(2.0538127, 1.6609161)

@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://btlmi0x65whw2"]
+[gd_scene load_steps=4 format=3 uid="uid://btlmi0x65whw2"]
 
 [ext_resource type="Texture2D" uid="uid://d2w1eh3nay15j" path="res://assets/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Idle/1.png" id="1_dhwj4"]
+[ext_resource type="Script" uid="uid://bph5gybbvm1j1" path="res://Personajes/Enemigos/Cannon/bullet.gd" id="1_vej08"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dhwj4"]
 
 [node name="Bullet" type="Area2D"]
+script = ExtResource("1_vej08")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_dhwj4")
