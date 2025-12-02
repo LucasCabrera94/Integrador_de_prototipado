@@ -1,12 +1,16 @@
 extends Area2D
 
-const SPEED = 10
-var direction := Vector2.RIGHT
+const SPEED = 170
+var direction: Vector2
 
-func _process(delta: float) -> void:
-	position += direction * SPEED * delta
+func _ready():
 
-	# eliminar si sale de la pantalla
-	if not get_viewport_rect().has_point(global_position):
-		queue_free()
-		
+	direction = Vector2.LEFT.rotated(global_rotation)
+
+func _physics_process(delta):
+	# Movimiento real sin deformaciones del padre
+	global_position += direction * SPEED * delta
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	queue_free()

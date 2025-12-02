@@ -5,7 +5,7 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dhwj4"]
 
-[node name="Bullet" type="Area2D"]
+[node name="Bullet" type="Area2D" groups=["enemy"]]
 script = ExtResource("1_vej08")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -14,3 +14,7 @@ texture = ExtResource("1_dhwj4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.7967504, 0.7524968)
 shape = SubResource("CircleShape2D_dhwj4")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -49,7 +49,12 @@ func _on_damage_detector_body_entered(body):
 		die()
 
 func die():
-	print("El jugador murió")
 	Animacion.play("Dead_Ground")
 	await Animacion.animation_finished
 	get_tree().reload_current_scene()
+
+
+func _on_damage_detector_area_entered(area: Area2D) -> void:
+	if area.is_in_group("enemy"):
+		muerte = true
+		die()

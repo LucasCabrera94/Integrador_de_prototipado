@@ -169,4 +169,5 @@ limit_left = 0
 limit_bottom = 270
 position_smoothing_enabled = true
 
+[connection signal="area_entered" from="DamageDetector" to="." method="_on_damage_detector_area_entered"]
 [connection signal="body_entered" from="DamageDetector" to="." method="_on_damage_detector_body_entered"]

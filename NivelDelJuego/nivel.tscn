@@ -59,6 +59,3 @@ position = Vector2(468, 245)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MuroInvisible"]
 position = Vector2(-7, 168)
 shape = SubResource("RectangleShape2D_pobxg")
-
-[node name="Cannon3" parent="." instance=ExtResource("9_da54p")]
-position = Vector2(537, 140)

@@ -16,13 +16,10 @@ texture = ExtResource("5_arbo6")
 scale = Vector2(1.5763954, 0.8654168)
 shape = SubResource("CircleShape2D_35xw0")
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(-218, 0)
-
-[node name="spawbullet" type="Marker2D" parent="."]
-position = Vector2(-28, 0)
-
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-17, -1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
