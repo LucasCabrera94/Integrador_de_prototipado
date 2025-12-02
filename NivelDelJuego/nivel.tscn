@@ -42,14 +42,7 @@ position = Vector2(1662, -315)
 position = Vector2(1432, -17)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(22, 189)
-
-[node name="Cannon" parent="." instance=ExtResource("9_da54p")]
-position = Vector2(912, -111)
-
-[node name="Cannon2" parent="." instance=ExtResource("9_da54p")]
-position = Vector2(1103, -159)
-scale = Vector2(-1, 1)
+position = Vector2(33, 187)
 
 [node name="Tesoro" parent="." instance=ExtResource("10_mo66q")]
 position = Vector2(468, 245)
@@ -59,3 +52,10 @@ position = Vector2(468, 245)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MuroInvisible"]
 position = Vector2(-7, 168)
 shape = SubResource("RectangleShape2D_pobxg")
+
+[node name="Cannon" parent="." instance=ExtResource("9_da54p")]
+position = Vector2(911, -112)
+
+[node name="Cannon2" parent="." instance=ExtResource("9_da54p")]
+position = Vector2(1103, -159)
+scale = Vector2(-1, 1)

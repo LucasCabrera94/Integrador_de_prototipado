@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://1r8upts2ixuk"]
 
-[ext_resource type="Texture2D" uid="uid://c7d7d3r1mwevo" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Padlock/1.png" id="1_jjwbd"]
+[ext_resource type="Script" uid="uid://chdv7mgyugcya" path="res://ElementosDelTerreno/Coleccionables/tesoro.gd" id="1_wbb3p"]
 [ext_resource type="Texture2D" uid="uid://brmnnwt8yjkao" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/1.png" id="2_wbb3p"]
 [ext_resource type="Texture2D" uid="uid://cp8u2d68mi568" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/2.png" id="3_16ohg"]
 [ext_resource type="Texture2D" uid="uid://bdpoyesertqqh" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="4_jx36b"]
@@ -13,14 +13,6 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lps7d"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_jjwbd")
-}],
-"loop": true,
-"name": &"Candado",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_wbb3p")
@@ -46,9 +38,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_rokwv")
 }],
-"loop": true,
+"loop": false,
 "name": &"Desbloqueado",
-"speed": 5.0
+"speed": 14.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -62,13 +54,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f4ogf"]
 size = Vector2(20, 25.022352)
 
-[node name="Tesoro" type="StaticBody2D"]
+[node name="Tesoro" type="Area2D"]
+script = ExtResource("1_wbb3p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lps7d")
 animation = &"Idle"
+autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4.0000005)
 scale = Vector2(1.3916131, -0.87921387)
 shape = SubResource("RectangleShape2D_f4ogf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

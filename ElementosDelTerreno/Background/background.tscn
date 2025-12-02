@@ -113,6 +113,7 @@ texture = ExtResource("2_n8p5u")
 [node name="SC1" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.2, 0.2)
 scroll_offset = Vector2(188, -88)
+repeat_size = Vector2(550, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="SC1"]
 position = Vector2(38, 143)
@@ -121,6 +122,7 @@ texture = ExtResource("3_1tc6b")
 [node name="SC2" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.3, 0.3)
 scroll_offset = Vector2(-2, 0)
+repeat_size = Vector2(550, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="SC2"]
 position = Vector2(75, 93)
@@ -128,6 +130,7 @@ texture = ExtResource("4_1tc6b")
 
 [node name="SC3" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(550, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="SC3"]
 position = Vector2(451, 67)

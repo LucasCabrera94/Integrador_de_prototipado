@@ -4,6 +4,12 @@ extends CharacterBody2D
 @export var SPEED = 110.0
 @export var JUMP_VELOCITY = -340.0
 var muerte: bool = false
+var tengollave: bool = false
+var monedero: int = 0
+
+
+
+
 func _physics_process(delta: float) -> void:
 	# GRAVEDAD
 	if muerte == false: 
@@ -51,7 +57,7 @@ func _on_damage_detector_body_entered(body):
 func die():
 	Animacion.play("Dead_Ground")
 	await Animacion.animation_finished
-	get_tree().reload_current_scene()
+	get_tree().root.get_tree().reload_current_scene()
 
 
 func _on_damage_detector_area_entered(area: Area2D) -> void:

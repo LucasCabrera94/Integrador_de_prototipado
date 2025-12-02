@@ -1,13 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://d2ng52j0sywsn"]
+[gd_scene load_steps=9 format=4 uid="uid://d2ng52j0sywsn"]
 
 [ext_resource type="TileSet" uid="uid://cppglgynr4app" path="res://TileSet/TerrenoTileSet.tres" id="1_lkkfo"]
 [ext_resource type="Texture2D" uid="uid://csoirqa70emm7" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="2_2g8dh"]
 [ext_resource type="PackedScene" uid="uid://bp0rclbx4o2ue" path="res://ElementosDelTerreno/Plataformas/Palmera.tscn" id="3_2g8dh"]
 [ext_resource type="PackedScene" uid="uid://b6j48e7t735j8" path="res://Personajes/Enemigos/Craby/Craby.tscn" id="4_cxmp7"]
 [ext_resource type="PackedScene" uid="uid://yu5mfwcpfgvg" path="res://ElementosDelTerreno/Coleccionables/Moneda.tscn" id="5_tmcn8"]
-[ext_resource type="PackedScene" uid="uid://biijaafsxoirh" path="res://Personajes/Enemigos/Cannon/Cannon.tscn" id="6_aa8cj"]
 [ext_resource type="PackedScene" uid="uid://bqpomhx8qajve" path="res://ElementosDelTerreno/ElementosPeligrosos/Pinchos.tscn" id="7_ooskg"]
-[ext_resource type="PackedScene" uid="uid://ui6gc7ukk1uy" path="res://Personajes/Pirata/pirata.tscn" id="8_aa8cj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cxmp7"]
 texture = ExtResource("2_2g8dh")
@@ -112,13 +110,6 @@ position = Vector2(329, 58)
 [node name="Moneda7" parent="." instance=ExtResource("5_tmcn8")]
 position = Vector2(281, 69)
 
-[node name="Cannon" parent="." instance=ExtResource("6_aa8cj")]
-position = Vector2(342, 106)
-
-[node name="Cannon2" parent="." instance=ExtResource("6_aa8cj")]
-position = Vector2(532, 57)
-scale = Vector2(-1, 1)
-
 [node name="Moneda8" parent="." instance=ExtResource("5_tmcn8")]
 position = Vector2(582, 13)
 
@@ -146,6 +137,3 @@ position = Vector2(405, 155.00002)
 scale = Vector2(0.8814926, 0.90467906)
 speed = 70
 patrol_distance = 10
-
-[node name="Pirata" parent="." instance=ExtResource("8_aa8cj")]
-position = Vector2(5, 136)
