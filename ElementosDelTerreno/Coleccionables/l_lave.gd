@@ -8,4 +8,5 @@ func _ready() -> void:
 func _on_body_entered(body):
 	if body.is_in_group("player"): 
 		body.tengollave = true
+		DatosDelJuego.PosicionGlobal = body.global_position
 		queue_free()

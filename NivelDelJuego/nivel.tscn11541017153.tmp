@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=18 format=3 uid="uid://dmcx6fqjdxuib"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
 [ext_resource type="PackedScene" uid="uid://bp02byo1yn3ki" path="res://ElementosDelTerreno/Background/background.tscn" id="1_v1yke"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://5gbutog2k1yu" path="res://ZonasDelJuego/Zona6.tscn" id="7_6a21a"]
 [ext_resource type="PackedScene" uid="uid://biijaafsxoirh" path="res://Personajes/Enemigos/Cannon/Cannon.tscn" id="9_da54p"]
 [ext_resource type="PackedScene" uid="uid://1r8upts2ixuk" path="res://ElementosDelTerreno/Coleccionables/Tesoro.tscn" id="10_mo66q"]
+[ext_resource type="PackedScene" uid="uid://db2e2rdbtvdaj" path="res://Personajes/Pirata/espada.tscn" id="11_d6aqt"]
 [ext_resource type="PackedScene" uid="uid://dldq3xynikxo" path="res://ElementosDelTerreno/Plataformas/Barco.tscn" id="11_pobxg"]
 [ext_resource type="Texture2D" uid="uid://csoirqa70emm7" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="12_j231i"]
 [ext_resource type="TileSet" uid="uid://cppglgynr4app" path="res://TileSet/TerrenoTileSet.tres" id="13_d6aqt"]
@@ -83,10 +84,11 @@ position = Vector2(1662, -315)
 position = Vector2(1432, -17)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(34, 189)
+position = Vector2(526, 220)
 
 [node name="Tesoro" parent="." instance=ExtResource("10_mo66q")]
 position = Vector2(468, 245)
+escena_espada = ExtResource("11_d6aqt")
 
 [node name="MuroInvisible" type="StaticBody2D" parent="."]
 

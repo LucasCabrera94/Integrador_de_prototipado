@@ -8,7 +8,9 @@ var tengollave: bool = false
 var monedero: int = 0
 
 
-
+func _ready() -> void:
+	if DatosDelJuego.PosicionGlobal != null:
+		self.global_position = DatosDelJuego.PosicionGlobal
 
 func _physics_process(delta: float) -> void:
 	# GRAVEDAD

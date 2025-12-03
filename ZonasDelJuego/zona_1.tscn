@@ -68,6 +68,10 @@ tile_set = SubResource("TileSet_opue3")
 position = Vector2(-22, 234)
 scale = Vector2(1.3570415, 2.3224022)
 
+[node name="Pinchos2" parent="." instance=ExtResource("7_3e03m")]
+position = Vector2(365.00003, 237.99998)
+scale = Vector2(2.0538127, 1.6609161)
+
 [node name="Agua2" parent="." instance=ExtResource("2_bcclw")]
 position = Vector2(331.00003, 236.99998)
 scale = Vector2(1.0106813, 2.3553963)
@@ -108,7 +112,3 @@ position = Vector2(515, 179)
 [node name="Pinchos" parent="." instance=ExtResource("7_3e03m")]
 position = Vector2(556, 172)
 rotation = -1.5707964
-
-[node name="Pinchos2" parent="." instance=ExtResource("7_3e03m")]
-position = Vector2(366.00003, 249.99998)
-scale = Vector2(2.0538127, 1.6609161)
