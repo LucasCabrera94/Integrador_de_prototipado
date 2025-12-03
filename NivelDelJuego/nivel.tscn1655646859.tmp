@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=13 format=3 uid="uid://dmcx6fqjdxuib"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
 [ext_resource type="PackedScene" uid="uid://bp02byo1yn3ki" path="res://ElementosDelTerreno/Background/background.tscn" id="1_v1yke"]
@@ -11,50 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://biijaafsxoirh" path="res://Personajes/Enemigos/Cannon/Cannon.tscn" id="9_da54p"]
 [ext_resource type="PackedScene" uid="uid://1r8upts2ixuk" path="res://ElementosDelTerreno/Coleccionables/Tesoro.tscn" id="10_mo66q"]
 [ext_resource type="PackedScene" uid="uid://dldq3xynikxo" path="res://ElementosDelTerreno/Plataformas/Barco.tscn" id="11_pobxg"]
-[ext_resource type="Texture2D" uid="uid://csoirqa70emm7" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="12_j231i"]
-[ext_resource type="TileSet" uid="uid://cppglgynr4app" path="res://TileSet/TerrenoTileSet.tres" id="13_d6aqt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pobxg"]
 size = Vector2(20, 338)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p765d"]
-texture = ExtResource("12_j231i")
-2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-3:2/0 = 0
-3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-4:2/0 = 0
-4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-5:2/0 = 0
-5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-6:2/0 = 0
-6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-7:2/0 = 0
-7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-8:2/0 = 0
-8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-9:2/0 = 0
-9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-2:4/0 = 0
-2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-3:4/0 = 0
-3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-4:4/0 = 0
-4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-5:4/0 = 0
-5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-6:4/0 = 0
-6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-7:4/0 = 0
-7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-8:4/0 = 0
-8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-9:4/0 = 0
-9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
-
-[sub_resource type="TileSet" id="TileSet_ye5j8"]
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_p765d")
 
 [node name="Juego" type="Node2D"]
 
@@ -83,7 +42,7 @@ position = Vector2(1662, -315)
 position = Vector2(1432, -17)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(1236, 36)
+position = Vector2(1743, -307)
 
 [node name="Tesoro" parent="." instance=ExtResource("10_mo66q")]
 position = Vector2(468, 245)
@@ -102,13 +61,5 @@ position = Vector2(1103, -159)
 scale = Vector2(-1, 1)
 
 [node name="Cannon3" parent="." instance=ExtResource("9_da54p")]
-position = Vector2(1359, -34)
+position = Vector2(1343, -34)
 scale = Vector2(-1, 1)
-
-[node name="Plataforma2" type="TileMapLayer" parent="."]
-position = Vector2(-371, 23)
-tile_map_data = PackedByteArray("AAAKAA4AAAAEAAQAAAALAA4AAAAFAAQAAAAMAA4AAAAGAAQAAAANAA4AAAAHAAQAAAAOAAsAAAACAAQAAAAPAAsAAAADAAQAAAAQAAsAAAAEAAQAAAARAAsAAAAFAAQAAAASAAsAAAAGAAQAAAATAAsAAAAHAAQAAAAJAA4AAAAGAAQAAAAFAA4AAAACAAQAAAAGAA4AAAADAAQAAAAHAA4AAAAEAAQAAAAFAAsAAAACAAQAAAAGAAsAAAADAAQAAAAHAAsAAAAEAAQAAABnAPX/AAAJAAQAAAA=")
-tile_set = SubResource("TileSet_ye5j8")
-
-[node name="Palmeras" type="TileMapLayer" parent="."]
-tile_set = ExtResource("13_d6aqt")

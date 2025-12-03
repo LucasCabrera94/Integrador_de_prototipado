@@ -136,4 +136,4 @@ position = Vector2(710, -57)
 position = Vector2(405, 155.00002)
 scale = Vector2(0.8814926, 0.90467906)
 speed = 70
-patrol_distance = 10
+patrol_distance = 13
