@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dmcx6fqjdxuib"]
+[gd_scene load_steps=17 format=3 uid="uid://dmcx6fqjdxuib"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4x66205dv6" path="res://ZonasDelJuego/zona_1.tscn" id="1_sh55c"]
 [ext_resource type="PackedScene" uid="uid://bp02byo1yn3ki" path="res://ElementosDelTerreno/Background/background.tscn" id="1_v1yke"]
@@ -83,7 +83,7 @@ position = Vector2(1662, -315)
 position = Vector2(1432, -17)
 
 [node name="Pirata" parent="." instance=ExtResource("2_jbjbr")]
-position = Vector2(1236, 36)
+position = Vector2(1204, 69)
 
 [node name="Tesoro" parent="." instance=ExtResource("10_mo66q")]
 position = Vector2(468, 245)
@@ -107,7 +107,7 @@ scale = Vector2(-1, 1)
 
 [node name="Plataforma2" type="TileMapLayer" parent="."]
 position = Vector2(-371, 23)
-tile_map_data = PackedByteArray("AAAKAA4AAAAEAAQAAAALAA4AAAAFAAQAAAAMAA4AAAAGAAQAAAANAA4AAAAHAAQAAAAOAAsAAAACAAQAAAAPAAsAAAADAAQAAAAQAAsAAAAEAAQAAAARAAsAAAAFAAQAAAASAAsAAAAGAAQAAAATAAsAAAAHAAQAAAAJAA4AAAAGAAQAAAAFAA4AAAACAAQAAAAGAA4AAAADAAQAAAAHAA4AAAAEAAQAAAAFAAsAAAACAAQAAAAGAAsAAAADAAQAAAAHAAsAAAAEAAQAAABnAPX/AAAJAAQAAAA=")
+tile_map_data = PackedByteArray(0, 0, 103, 0, 245, 255, 0, 0, 9, 0, 4, 0, 0, 0)
 tile_set = SubResource("TileSet_ye5j8")
 
 [node name="Palmeras" type="TileMapLayer" parent="."]

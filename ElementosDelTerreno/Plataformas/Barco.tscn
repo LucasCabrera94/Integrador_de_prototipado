@@ -98,17 +98,17 @@ frame = 1
 frame_progress = 0.25438967
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-26, 1)
+position = Vector2(15.5, 1)
 texture = ExtResource("15_0p5iv")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(-26, 9)
+position = Vector2(15.5, 9)
 texture = ExtResource("15_0p5iv")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(-26, 18)
+position = Vector2(15.5, 18)
 texture = ExtResource("15_0p5iv")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(-26, 26)
+position = Vector2(15.5, 26)
 texture = ExtResource("15_0p5iv")

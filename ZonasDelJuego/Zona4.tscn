@@ -84,7 +84,7 @@ position = Vector2(71, 7)
 position = Vector2(109, 45)
 
 [node name="Moneda3" parent="." instance=ExtResource("4_5vscm")]
-position = Vector2(155, 90)
+position = Vector2(174, 77)
 
 [node name="Moneda4" parent="." instance=ExtResource("4_5vscm")]
 position = Vector2(212, 109)
